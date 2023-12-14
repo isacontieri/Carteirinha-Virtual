@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Carteirinha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+
+    <style>
+      /* style.css */
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Roboto Condensed', sans-serif;
+        background: linear-gradient(to left, #008080, #00CED1);
+      }
+      
+      header {
+        background-color: #008B8B;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        background-color: #20B2AA;
+        transition: background-color 0.3s ease;
+      }
+      
+      nav a:hover {
+        background-color: #483D8B;
+        color: #fff;
+      }
+      
+      .content {
+        flex: 1;
+      }
+      
+      footer {
+        font-family: 'Adelle', sans-serif;
+        background-color: #483D8B;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      
+      .image {
+        background: transparent;
+      }
+
+      .logo {
+        /* Add any styles for the logo if needed */
+        width: 400px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        background: transparent;
+      }
+      .content {
+      flex: 1;
+      display: flex;
+      justify-content: space-between; /* Espaçamento entre as imagens */
+      align-items: center;
+      padding: 0 20px; /* Adiciona algum espaço nas laterais para melhorar a aparência */
+    }
+
+    .image img {
+      max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+      height: auto;
+    }
+
+    .image1 {
+      max-width: 150px; /* Ajuste o tamanho conforme necessário */
+      margin-right: 20px; /* Adiciona margem à direita para separar da imagem 3 */
+    }
+
+    .image3 {
+      order: 1; /* Define a ordem, colocando imagem 3 à esquerda */
+      margin-right: 20px; /* Adiciona margem à direita para separar da imagem 4 */
+    }
+
+    .image4 {
+      order: 2; /* Define a ordem, colocando imagem 4 à direita */
+      margin-left: 20px; /* Adiciona margem à esquerda para separar da imagem 3 */
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="image">
+        <img class="logo" src="logo.png" alt="Logo">
+      </div>
+      <nav>
+        <a href="incluir.html">Inclua uma carteirinha</a>
+        <a href="usuarios.php">Consulte sua carteirinha</a>
+        <a href="equipe.html"> Sobre a Equipe </a>
+        <a href="home.html">Home </a>
+      </nav>
+
+    </header>
+    
+    <div class="content">
+      <div class="image image3">
+        <img src="ze-gotinha.png" alt="Imagem 3">
+      </div>
+      <div class="image image4">
+        <img src="mov_vac.png" alt="Imagem 4">
+        <!-- Adicione mais imagens conforme necessário -->
+      </div>
+    </div>
+
+    <!-- Conteúdo da página aqui -->
+
+  </body>
+</html>

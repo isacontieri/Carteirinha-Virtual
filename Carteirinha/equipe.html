@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Carteirinha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+
+    <style>
+      /* style.css */
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Roboto Condensed', sans-serif;
+        background: linear-gradient(to left, #008080, #00CED1);
+      }
+      
+      header {
+        background-color: #008B8B;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav {
+        padding-right: 100px;
+      }
+
+      .equipe {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        margin: 20px;
+        padding: 10px;
+      }
+
+      .membro {
+        border: 2px solid #008B8B;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+      }
+
+      .membro img {
+        max-width: 100%;
+        height: auto;
+      }
+      .image {
+        background: transparent;
+      }
+
+      .logo {
+        /* Add any styles for the logo if needed */
+        width: 400px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        background: transparent;
+      }
+      .equipe {
+        height: auto;
+      }
+      header {
+        background-color: #008B8B;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        background-color: #20B2AA;
+        transition: background-color 0.3s ease;
+      }
+      
+      nav a:hover {
+        background-color: #483D8B;
+        color: #fff;
+      }
+      
+      .content {
+        flex: 1;
+      }
+      
+      footer {
+        font-family: 'Adelle', sans-serif;
+        background-color: #483D8B;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="image">
+        <img class="logo" src="logo.png" alt="Logo">
+      </div>
+      <nav>
+        <a href="incluir.html">Inclua uma carteirinha</a>
+        <a href="usuarios.php">Consulte sua carteirinha</a>
+        <a href="equipe.html"> Sobre a Equipe </a>
+        <a href="home.html">Home </a>
+      </nav>
+    </header>
+
+    <div class="equipe">
+      <!-- Divs para os participantes (3 linhas de 3 participantes cada) -->
+      <div class="membro">
+        <img src="kevas.png" alt="Participante 1">
+        <h3>Kevin Goecking</h3>
+      </div>
+      <div class="membro">
+        <img src="gabs.png" alt="Participante 2">
+        <h3>Gabriela</h3>
+      </div>
+      <div class="membro">
+        <img src="rick.png" alt="Participante 3">
+        <h3>Rick Rezende</h3>
+      </div>
+      <div class="membro">
+        <img src="sofia.png" alt="Participante 4">
+        <h3>Sofia Sodré</h3>
+      </div>
+      <div class="membro">
+        <img src="ray.png" alt="Participante 5">
+        <h3>Rayane</h3>
+      </div>
+      <div class="membro">
+        <img src="fernando.png" alt="Participante 6">
+        <h3>Fernando Paiva</h3>
+      </div>
+      <div class="membro">
+        <img src="isa.png" alt="Participante 7">
+        <h3>Isa Contieri</h3>
+      </div>
+      <div class="membro">
+        <img src="gabriel.png" alt="Participante 8">
+        <h3>Gabriel</h3>
+      </div>
+      <div class="membro">
+        <img src="pedro.png" alt="Participante 9">
+        <h3>Pedro</h3>
+      </div>
+    </div>
+  </body>
+</html>
